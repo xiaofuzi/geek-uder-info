@@ -1,0 +1,57 @@
+//module less
+@import url("ui/ui.less");
+
+// style public
+//
+// @project
+// @copyright
+// @author
+// @version     1.0
+//
+
+// CSS Menu
+//
+// Variable
+// ImgUrl
+// Transition
+// Structure
+
+// 使用.cf清除浮动会将所有要清除浮动的样式合并, 如要单独清除浮动请使用.clearfix
+/* clearfix */
+.clearfix {
+    .clearfix-mixin;
+}
+
+// * Variable
+// ----------------------------------------
+
+// *Img url
+// ----------------------------------------
+
+// *Transition
+// ----------------------------------------
+
+.trs-3s {
+    .transition(all .3s);
+}
+.rotate {
+    .transform(rotate(180deg));
+}
+
+// *Common
+// ----------------------------------------
+
+// *Structure
+// ----------------------------------------
+
+.wrap {
+    .mc;
+    .clearfix-mixin;
+    width: 1000px;
+    min-width: 1000px;
+}
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+    .mc;
+}

@@ -1,0 +1,124 @@
+// style header
+//
+// @project
+// @copyright
+// @author
+// @version     1.0
+//
+
+// CSS Menu
+//
+//
+//
+//
+
+// *Header
+// ----------------------------------------
+
+#header {
+    .cf;
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 10px;
+    .logo {
+        float: left;
+        width: 113px;
+        margin-top: 5px
+    }
+    .loginbox_event {
+        float: right;
+        display: inline-block;
+        color: #333;
+        text-align: right;
+        line-height: 50px;
+        font-size: 12px;
+
+        i.tag-icon {
+            float: left;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            margin: 14px 10px 0 0;
+            background: url(../images/icon.png) 0 -22px no-repeat;
+        }
+        em {
+            padding: 0 5px
+        }
+        .user-name, span {
+            display: inline-block;
+            cursor: pointer;
+        }
+        .user-name {
+            .vip-icon {
+                img {
+                    width: 40px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+            }
+            p {
+                img {
+                    width: 10px;
+                    height: 6px;
+                    margin-left: 5px;
+                    .transition(transform; .2s ease-in);
+                }
+            }
+        }
+        span {
+            a {
+                &, &:hover {
+                    color: #333
+                }
+            }
+        }
+        .sj-icon {
+            top: -7px;
+            left: 50%;
+            width: 13px;
+            height: 7px;
+            margin-left: -6.5px;
+        }
+        .user-center {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            z-index: 2200;
+            width: 110px;
+            margin-left: -65px;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            a {
+                display: block;
+                height: 26px;
+                color: #ddd;
+                line-height: 26px;
+                font-size: 12px;
+                &:hover {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+}
+#login-user {
+    color: #35b558;
+}
+// loading
+#loading {
+    overflow: hidden;
+    width: 100%;
+    height: 2px;
+    background: #f3f3f3;
+    .loading-length {
+        width: 100%;
+        height: 2px;
+        overflow: hidden;
+        background: #35B558;
+        .linear-gradient(~"10deg, #35b558 14%, #8aca8c 50%, #2d85ca 100%");
+    }
+}

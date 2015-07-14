@@ -1,0 +1,52 @@
+/*
+varibales
+
+*course box
+@course-width
+@course-height
+*/
+/* clearfix */
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: " ";
+}
+/* 
+user information style
+*/
+.user-info .user-info-portrait {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+}
+.user-info .user-info-portrait img {
+  width: 100%;
+}
+.user-info .user-info-body {
+  height: 100px;
+}
+.user-info .user-info-body h3 {
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+}
+.user-info .user-info-body button {
+  display: inline-block;
+}
+.user-info .user-info-body img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.user-course ul li {
+  display: inline-block;
+}
+.user-course user-course-content {
+  width: 800px;
+  font-size: 16px;
+  color: #333;
+}
+.user-course user-course-content .more-icon {
+  float: right;
+}

@@ -1,0 +1,98 @@
+// style form
+//
+// @project
+// @copyright
+// @author
+// @version     1.0
+//
+
+// CSS Menu
+//
+// Variable
+// Base
+// Theme
+//
+
+// *Form Variable
+// ----------------------------------------
+
+@form-item-margin: 0 0 20px 0;          // item上下间距
+@item-line-height: 42px;
+@item-label-width: 80px;           // label宽度
+@item-label-color: #000;            // label颜色
+@item-lable-font-size: 14px;
+@item-label-em-color: #f00;         // 必填项 * 颜色
+@item-cont-margin-left: 90px;
+@form-inline-margin: 0 10px 15px 0;
+
+// *Form Base
+// ----------------------------------------
+
+/* form */
+.form {
+    .legend {
+        display: block;
+        width: 100%;
+    }
+    .form-group {
+        .clearfix-mixin;
+    }
+    .form-item {
+        &:extend(.form .form-group all);
+        margin: @form-item-margin;
+    }
+    .form-label {
+        float: left;
+        width: @item-label-width;
+        color: @item-label-color;
+        font-size: @item-lable-font-size;
+        line-height: @item-line-height;
+        text-align: right;
+
+        em {
+            margin: 0 5px;
+            color: @item-label-em-color;
+            font-family: @font-family-mark;
+        }
+    }
+    .form-cont {
+        margin-left: @item-cont-margin-left;
+        line-height: @item-line-height;
+        .clearfix-mixin;
+        >label {
+            margin-right: 20px;
+            >input[type="checkbox"], >input[type="radio"] {
+                position: relative;
+                top: -1px;
+                margin-right: 5px;
+            }
+        }
+        >.txt, >.btn, >.txt-tel,
+        >.txt-section, >.select, >select {
+            margin-right: 10px;
+        }
+        >input[type="checkbox"], >input[type="radio"] {
+            margin-right: 5px;
+        }
+    }
+}
+
+/* form-inline */
+.form.form-inline .form-item {
+    display: inline-block;
+    margin: @form-inline-margin;
+    vertical-align: top;
+}
+/* form-lable-auto */
+.form.form-lable-auto {
+    .form-label {
+        float: left;
+        margin-right: 10px;
+        width: auto;
+    }
+    .form-cont {
+        float: left;
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,465 @@
+// variable
+//
+// @project
+// @copyright
+// @author
+// @version     1.0
+//
+// 参数说明: true为开启 || false、无参数为不开启或默认参数
+
+// *样式表定制 - "true"为引用该样式表
+// ----------------------------------------
+
+// base
+@grid-want: false;       // 栅格
+@code-want: false;       // 代码块样式表
+@control-want: true;     // 控件样式表
+@font-want: false;       // 字体样式表
+@arrow-want: false;      // 箭头样式表
+// ui
+@icon-want: true;       // icon 样式表
+@tabs-want: false;       // tabs 样式表
+@form-want: true;        // 表单样式表
+@table-want: true;      // 表格样式表
+@popup-want: true;       // 弹出层样式表
+@slide-want: false;      // 幻灯片样式表
+@tooltip-want: false;    // 提示框样式表
+@header-want: true;      // header 样式表
+@footer-want: true;      // footer 样式表
+@theme-want: false;      // 主题样式
+
+// *Base
+// ----------------------------------------
+
+@selection-bg-color: ;      // 文本高亮背景色
+@selection-color: ;         // 文本高亮文字颜色
+
+//默认滚动条显示方式
+@html-overflow-key: overflow-y;     // 参数等于false时,不作任何设置
+@html-overflow-val: scroll;
+
+// 全屏
+@full-page: false;
+
+// *Font
+// ----------------------------------------
+
+@font-color: #333;   // 默认文字颜色
+
+// 字体集
+@font-family-verdana: Verdana;
+@font-family-lthsc: "Lantinghei SC";
+@font-family-hiragino: "Hiragino Sans GB";
+@font-family-yahei: 'Microsoft YaHei';
+@font-family-helvetica: Helvetica;
+@font-family-arial: arial;
+@font-family-simsun: simsun;
+@font-family-serif: sans-serif;
+// 默认字体
+@font-family-base: @font-family-verdana, @font-family-lthsc, @font-family-hiragino, @font-family-yahei, @font-family-helvetica, @font-family-arial, @font-family-simsun, @font-family-serif;
+// 符号字体
+@font-family-mark: @font-family-simsun;
+// 字符字体
+@font-family-chars: @font-family-arial, @font-family-serif;
+
+@font-size: 12px;   // 默认字号
+@line-height: 1.4;  // 默认行高
+
+// Link
+@link-color: #0e90d2;
+@link-hover-color: #095f8a;
+@link-decoration: none;
+
+// *Gray
+// ----------------------------------------
+
+@gray-enable: false;
+
+// *Color
+// ----------------------------------------
+
+@light-color-enable: true;
+@light-color: #999;         // 浅色
+@tip-color-enable: true;
+@tip-color: #fd6505;        // 提示色
+@warn-color-enable: true;
+@warn-color: #f00;          // 警告色
+@success-color-enable: true;
+@success-color: #339734;    // 成功色
+
+// *Mask
+// ----------------------------------------
+
+@mask-color: #000;      // 遮罩颜色
+@mask-zindex: 900;      // 遮罩z-index
+@mask-opacity: .4;      // 遮罩不透明度
+
+// *Font Awesome
+// ----------------------------------------
+// 需要Font Awesome支持
+// http://fortawesome.github.io/Font-Awesome/icons/
+@font-icon-path: "../fonts";
+@font-icon-def-size: 14px;
+
+// *Code
+// ----------------------------------------
+
+@code-color: #c7254e;
+@code-bg: #f9f2f4;
+
+@kbd-color: #fff;
+@kbd-bg: #333;
+
+@pre-bg: #f5f5f5;
+@pre-color: #666;
+@pre-font-size: 12px;
+@pre-border-color:  #ccc;
+@pre-scroll-max-height: 340px;
+
+// *Control Status
+// ----------------------------------------
+
+@status-enable: true;
+@placeholder: #999;             // placeholder 文字颜色
+@input-error-bg: #ffe8e8;       // 输入错误input背景样式(可选项)
+@input-error-border: 1px solid #ef7f7f;     // 输入错误input边框样式
+@text-error-color: #f00;        // 输入错误提示文字颜色
+@text-success-color: #35b558;        // 输入错误提示文字颜色
+
+// *Note
+// ----------------------------------------
+
+@note-color: #666;
+@span-note-padding-left: 5px;
+@div-note-padding: 4px 0 0;
+@div-note-line-height: 12px;
+
+@note-strong-padding: 0 5px;
+@note-strong-color: #f00;
+@note-b-padding: 0 5px;
+@note-b-color: #333;
+
+// *Checkbox & Radio
+// ----------------------------------------
+@radio-checkbox-enable: false;
+@chk-radio-margin: 0 5px 0 2px;
+
+// *Button
+// ----------------------------------------
+
+@btn-enable: true;
+@btn-radius: 3px;   // 按钮圆角
+
+// Disabled
+@btn-disabled-background: #eee;
+@btn-disabled-border: 1px solid #e7e7e7;
+@btn-disabled-color: #999;
+
+// 按钮基础样式
+@btn-base-height: 26px;
+@btn-base-padding: 0 15px;
+@btn-base-font-size: 12px;
+@btn-base-border-width: 1px;
+@btn-base-border-style: solid;
+
+// 背景类型参数: img, color, gradient;
+// Button Theme
+@btn-base-bg-type: color;
+@btn-base-background: #eaeaea;
+@btn-base-border-color: #eaeaea;
+@btn-base-color: #666;
+@btn-base-hover-background: #eee;
+@btn-base-hover-border-color: ;             // (可选项)
+@btn-base-hover-color: #999;                // (可选项)
+@btn-base-active-background: #eee;
+@btn-base-active-border-color: ;            // (可选项)
+@btn-base-active-color: #999;               // (可选项)
+
+@btn-def-enable: true;
+@btn-def-bg-type: color;
+@btn-def-background: #35b558;
+@btn-def-border-color: #35b558;             // (可选项)
+@btn-def-color: #fff;
+@btn-def-hover-background: #66d178;
+@btn-def-hover-border-color: #66d178;       // (可选项)
+@btn-def-hover-color: #fff;                 // (可选项)
+@btn-def-active-background: #66d178;
+@btn-def-active-border-color: #66d178;      // (可选项)
+@btn-def-active-color: #fff;                // (可选项)
+
+@btn-primary-enable: true;
+@btn-primary-bg-type: color;
+@btn-primary-background: #2d85ca;
+@btn-primary-border-color: #2d85ca;
+@btn-primary-color: #fff;
+@btn-primary-hover-background: #4a9bdb;
+@btn-primary-hover-border-color: #4a9bdb;   // (可选项)
+@btn-primary-hover-color: #fff;             // (可选项)
+@btn-primary-active-background: #4a9bdb;
+@btn-primary-active-border-color: #4a9bdb;  // (可选项)
+@btn-primary-active-color: #fff;            // (可选项)
+
+@btn-warn-enable: true;
+@btn-warn-bg-type: color;
+@btn-warn-background: #ff5c00;
+@btn-warn-border-color: #ff5c00;
+@btn-warn-color: #fff;
+@btn-warn-hover-background: #ff8530;
+@btn-warn-hover-border-color: #ff8530;      // (可选项)
+@btn-warn-hover-color: #fff;                // (可选项)
+@btn-warn-active-background: #ff8530;
+@btn-warn-active-border-color: #ff8530;     // (可选项)
+@btn-warn-active-color: #fff;               // (可选项)
+
+@btn-text-enable: false;
+@btn-text-bg-type: color;
+@btn-text-background: transparent;
+@btn-text-border-color: transparent;
+@btn-text-color: #666;
+@btn-text-hover-background: transparent;
+@btn-text-hover-border-color: transparent;  // (可选项)
+@btn-text-hover-color: #999;                // (可选项)
+@btn-text-active-background: transparent;
+@btn-text-active-border-color: transparent; // (可选项)
+@btn-text-active-color: #999;               // (可选项)
+
+// *Button Size
+// ----------------------------------------
+
+// Button height
+@btn-h-xs-enable: false;
+@btn-h-xs: 22px;
+@btn-h-xs-padding: 0 15px;
+@btn-h-xs-border-width: @btn-base-border-width;
+@btn-h-xs-font-size: ;          // (可选项)
+
+@btn-h-sm-enable: false;
+@btn-h-sm: 24px;
+@btn-h-sm-padding: 0 15px;
+@btn-h-sm-border-width: @btn-base-border-width;
+@btn-h-sm-font-size: ;          // (可选项)
+
+@btn-h-lg-enable: true;
+@btn-h-lg: 30px;
+@btn-h-lg-padding: 0 20px;
+@btn-h-lg-border-width: @btn-base-border-width;
+@btn-h-lg-font-size: 14px;      // (可选项)
+
+@btn-h-xl-enable: true;
+@btn-h-xl: 42px;
+@btn-h-xl-padding: 0 30px;
+@btn-h-xl-border-width: @btn-base-border-width;
+@btn-h-xl-font-size: 16px;      // (可选项)
+
+// Button width
+@btn-w-xs-enable: false;
+@btn-w-xs: 60px;
+
+@btn-w-sm-enable: true;
+@btn-w-sm: 110px;
+
+@btn-w-lg-enable: true;
+@btn-w-lg: 180px;
+
+@btn-w-xl-enable: true;
+@btn-w-xl: 300px;
+
+@btn-w-full-enable: false;
+@btn-w-full: 100%;
+
+// Button padding
+@btn-p-xs-enable: false;
+@btn-p-xs: 5px;
+
+@btn-p-sm-enable: false;
+@btn-p-sm: 10px;
+
+@btn-p-lg-enable: false;
+@btn-p-lg: 30px;
+
+@btn-p-xl-enable: false;
+@btn-p-xl: 80px;
+
+// *Button File
+// ----------------------------------------
+
+@btn-file-enable: false;
+
+// *Text
+// ----------------------------------------
+
+@txt-enable: true;
+@txt-base-width: 110px;
+@txt-base-height: 26px;
+@txt-base-font-size: 12px;
+@txt-base-line-height: 16px;
+@txt-base-border-width: 1px;
+@txt-base-border-style: solid;
+@txt-base-border-color: #ccc;
+@txt-base-hover-border-color: #a5a5a5;
+@txt-base-focus-border-color: #35b558;
+
+// Text radius
+@txt-base-radius: 4px;
+
+// Text height
+@txt-h-xs-enable: false;
+@txt-h-xs: @btn-h-xs;
+@txt-h-xs-line-height: @txt-base-line-height;
+@txt-h-xs-font-size: ;          // (可选项)
+
+@txt-h-sm-enable: false;
+@txt-h-sm: @btn-h-sm;
+@txt-h-sm-line-height: @txt-base-line-height;
+@txt-h-sm-font-size: ;          // (可选项)
+
+@txt-h-lg-enable: false;
+@txt-h-lg: @btn-h-lg;
+@txt-h-lg-line-height: @txt-base-line-height;
+@txt-h-lg-font-size: ;          // (可选项)
+
+@txt-h-xl-enable: true;
+@txt-h-xl: @btn-h-xl;
+@txt-h-xl-line-height: 18px;    // (可选项)
+@txt-h-xl-font-size: 14px;
+
+// Text width
+@txt-w-xs-enable: false;
+@txt-w-xs: 60px;
+
+@txt-w-sm-enable: false;
+@txt-w-sm: 80px;
+
+@txt-w-lg-enable: true;
+@txt-w-lg: 130px;
+
+@txt-w-xl-enable: true;
+@txt-w-xl: 300px;
+
+@txt-w-full-enable: false;
+@txt-w-full: 100%;
+
+// *TEL Text
+// ----------------------------------------
+
+@tel-txt-enable: false;
+@tel-txt-area-width: 60px;
+@tel-txt-num-width: 120px;
+@tel-txt-ext-width: 60px;
+@tel-txt-dash-margin: 5px;
+@tel-txt-dase-color: #ccc;
+@tel-txt-dase-line-height: @txt-base-height;
+
+// Tel height
+@tel-h-xs-enable: false;
+@tel-h-xs: @txt-h-xs;
+@tel-h-xs-line-height: @txt-h-xs-line-height;
+@tel-h-xs-font-size: ;      // (可选项)
+
+@tel-h-sm-enable: false;
+@tel-h-sm: @txt-h-sm;
+@tel-h-sm-line-height: @txt-h-sm-line-height;
+@tel-h-sm-font-size: ;      // (可选项)
+
+@tel-h-lg-enable: false;
+@tel-h-lg: @txt-h-lg;
+@tel-h-lg-line-height: @txt-h-lg-line-height;
+@tel-h-lg-font-size: ;      // (可选项)
+
+@tel-h-xl-enable: false;
+@tel-h-xl: @txt-h-xl;
+@tel-h-xl-line-height: @txt-h-xl-line-height;
+@tel-h-xl-font-size: ;      // (可选项)
+
+// *Text Section
+// ----------------------------------------
+
+@txt-section-enable: false;
+@txt-section-margin: 8px;
+@txt-section-color: #666;
+@txt-section-family: @font-family-base;
+@txt-section-font-size: 14px;
+@txt-section-line-height: @txt-base-height;
+@txt-section-dash-color: #ccc;
+
+// *Text File
+// ----------------------------------------
+
+@file-ctrl-enable: false;
+
+// *Select
+// ----------------------------------------
+@select-enable: false;
+@select-base-width: 120px;
+@select-base-height: 26px;
+@select-base-font-size: 12px;
+@select-base-border-width: @txt-base-border-width;
+@select-base-border-style: @txt-base-border-style;
+@select-base-border-color: @txt-base-border-color;
+@select-base-hover-border-color: @txt-base-hover-border-color;
+@select-base-focus-border-color: @txt-base-focus-border-color;
+
+// Select height
+@select-h-xs-enable: false;
+@select-h-xs: @txt-h-xs;
+@select-h-xs-padding: ;         // (可选项)
+@select-h-xs-font-size: ;       // (可选项)
+
+@select-h-sm-enable: false;
+@select-h-sm: @txt-h-sm;
+@select-h-sm-padding: ;         // (可选项)
+@select-h-sm-font-size: ;       // (可选项)
+
+@select-h-lg-enable: false;
+@select-h-lg: @txt-h-lg;
+@select-h-lg-padding: 2px;      // (可选项)
+@select-h-lg-font-size: ;       // (可选项)
+
+@select-h-xl-enable: false;
+@select-h-xl: @txt-h-xl;
+@select-h-xl-padding: 3px;      // (可选项)
+@select-h-xl-font-size: 14px;   // (可选项)
+
+// Select width
+@select-w-xs-enable: false;
+@select-w-xs: 80px;
+
+@select-w-sm-enable: false;
+@select-w-sm: 100px;
+
+@select-w-lg-enable: false;
+@select-w-lg: 140px;
+
+@select-w-xl-enable: false;
+@select-w-xl: 180px;
+
+// * Textarea
+// ----------------------------------------
+
+@textarea-enable: false;
+@textarea-base-resize: vertical;
+@textarea-base-padding: 5px;
+@textarea-base-border-width: @txt-base-border-width;
+@textarea-base-border-style: @txt-base-border-style;
+@textarea-base-border-color: @txt-base-border-color;
+@textarea-base-hover-border-color: @txt-base-hover-border-color;
+@textarea-base-focus-border-color: @txt-base-focus-border-color;
+
+// *Arrow
+// ----------------------------------------
+
+@arrow-base-width: 20px;
+@arrow-base-color: #666;
+@arrow-base-border-width: 1px;  // 默认空心箭头边框粗细
+@arrow-base-hollow-color: #dfeae2; // 默认空心箭头底色
+
+// Arrow Theme
+@arrow-white-color: #fff;
+@arrow-muted-color: #979797;
+@arrow-danger-color: #f86363;
+
+// Arrow Size
+@arrow-xs: 12px;
+@arrow-sm: 16px;
+@arrow-lg: 24px;
+@arrow-xl: 28px;
